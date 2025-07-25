@@ -102,10 +102,6 @@ Here are some features I plan to add in the future:
 
     [ ] Console Panel: Implement a custom console to display console.log outputs and errors.
 
-📄 License
-
-This project is distributed under the MIT License. See LICENSE for more information.
-
 <p align="center">
 Made with ❤️ by Gaurav Kavat
 </p>
