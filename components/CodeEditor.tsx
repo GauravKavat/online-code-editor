@@ -45,10 +45,6 @@ export default function CodeEditor() {
         <html>
           <head>
             <style>
-              /* This CSS will prevent scrolling inside the iframe */
-              html, body {
-                overflow: hidden;
-              }
               ${cssCode}
             </style>
           </head>
@@ -65,8 +61,7 @@ export default function CodeEditor() {
   }, [htmlCode, cssCode, jsCode]);
 
   return (
-    // Added overflow-hidden to prevent the entire page from scrolling
-    <div className="flex flex-col md:flex-row h-screen bg-gray-900 text-white overflow-hidden">
+    <div className="flex flex-col md:flex-row h-screen bg-gray-900 text-white">
       {/* Code Editors Pane */}
       <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col p-4 space-y-4">
         {/* HTML Editor */}
@@ -125,7 +120,6 @@ export default function CodeEditor() {
       </div>
 
       {/* Output Preview Pane */}
-      {/* This container now correctly manages its children's height */}
       <div className="w-full md:w-1/2 h-1/2 md:h-full p-4 flex flex-col">
         <h2 className="text-lg font-semibold mb-2 text-gray-300 flex-shrink-0">Preview</h2>
         <div className="w-full flex-1">
